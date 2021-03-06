@@ -33,7 +33,15 @@ app.use(express.urlencoded({ extended: true }));
 
 //
 app.get('/', (req, res) => {
-    return res.send('Hola mundo roberto')
+    return res.send('Heroku')
+})
+
+app.get('/deploy', (req, res) => {
+    return res.send('Deploy de heroku')
+})
+
+app.get('/pruebas', (req, res) => {
+    return res.send('Pruebas segunda url en heroku')
 })
 
 //
